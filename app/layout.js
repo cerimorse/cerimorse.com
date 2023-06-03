@@ -1,10 +1,8 @@
 import "@/styles/globals.css";
 
-import { Rubik } from "next/font/google";
+import { fontSans } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/providers/theme-provider";
-
-const rubik = Rubik({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -21,8 +19,8 @@ export default function RootLayout({ children }) {
       <head />
       <body
         className={cn(
-          "min-h-screen bg-background antialiased",
-          rubik.className
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
