@@ -1,8 +1,8 @@
-import "@/app/styles/globals.css";
+import "@/styles/globals.css";
 
 import { Rubik } from "next/font/google";
-import { cn } from "@/app/lib/utils";
-import ThemeProvider from "@/app/providers/theme-provider";
+import { cn } from "@/lib/utils";
+import { ThemeProvider } from "@/providers/theme-provider";
 
 const rubik = Rubik({ subsets: ["latin"] });
 
