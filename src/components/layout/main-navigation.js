@@ -17,7 +17,7 @@ export function MainNavigation() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <Link href="/" passHref>
+          <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink
               active={pathname === "/"}
               className={navigationMenuTriggerStyle()}
@@ -27,7 +27,7 @@ export function MainNavigation() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/about" passHref>
+          <Link href="/about" legacyBehavior passHref>
             <NavigationMenuLink
               active={pathname === "/about"}
               className={navigationMenuTriggerStyle()}
@@ -37,7 +37,7 @@ export function MainNavigation() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/timeline" passHref>
+          <Link href="/timeline" legacyBehavior passHref>
             <NavigationMenuLink
               active={pathname === "/timeline"}
               className={navigationMenuTriggerStyle()}
@@ -47,7 +47,7 @@ export function MainNavigation() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/contact" passHref>
+          <Link href="/contact" legacyBehavior passHref>
             <NavigationMenuLink
               active={pathname === "/contact"}
               className={navigationMenuTriggerStyle()}

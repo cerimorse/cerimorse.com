@@ -3,7 +3,7 @@ import "@/styles/globals.css";
 import { fontSans } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/providers/theme-provider";
-import { AppBar } from "@/components/app-bar";
+import { AppBar } from "@/components/layout/app-bar";
 
 export const metadata = {
   title: "Create Next App",

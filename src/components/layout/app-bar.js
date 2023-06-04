@@ -1,5 +1,5 @@
-import { MainNavigation } from "@/components/main-navigation";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { MainNavigation } from "@/components/layout/main-navigation";
+import { ThemeToggle } from "@/components/layout/theme-toggle";
 
 export function AppBar() {
   return (
