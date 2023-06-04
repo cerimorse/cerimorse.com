@@ -26,8 +26,7 @@ export default function RootLayout({ children }) {
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <AppBar />
-          <main className="bg-background min-h-screen"></main>
-          {children}
+          <main className="bg-background min-h-screen">{children}</main>
         </ThemeProvider>
       </body>
     </html>
