@@ -3,6 +3,7 @@ import "@/styles/globals.css";
 import { fontSans } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/providers/theme-provider";
+import { AppBar } from "@/components/app-bar";
 
 export const metadata = {
   title: "Create Next App",
@@ -24,7 +25,8 @@ export default function RootLayout({ children }) {
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="bg-background min-h-screen"></div>
+          <AppBar />
+          <main className="bg-background min-h-screen"></main>
           {children}
         </ThemeProvider>
       </body>
