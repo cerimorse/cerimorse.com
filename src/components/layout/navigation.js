@@ -3,7 +3,7 @@
 import * as React from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { ChevronDown } from "@/components/common/icons";
+import { ChevronDown as ChevronDownIcon } from "@/components/common/icons";
 import { Button } from "@/components/common/button";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/common/sheet";
 import {
@@ -51,9 +51,9 @@ export function Navigation() {
       </NavigationMenu>
       <Sheet open={open} onOpenChange={handleMobileNavigationChange}>
         <SheetTrigger asChild>
-          <Button variant="ghost">
+          <Button variant="ghost" className="md:hidden">
             {activeLabel}
-            <ChevronDown className="w-4 h-4 ml-2" />
+            <ChevronDownIcon className="w-4 h-4 ml-2" />
           </Button>
         </SheetTrigger>
         <SheetContent position="top" size="full">
