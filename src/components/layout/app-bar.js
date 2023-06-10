@@ -1,4 +1,4 @@
-import { MainNavigation } from "@/components/layout/main-navigation";
+import { Navigation } from "@/components/layout/navigation";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 
 export function AppBar() {
@@ -7,7 +7,7 @@ export function AppBar() {
       <div className="container h-14 flex items-center">
         <div className="flex-1"></div>
         <div className="flex-1 flex justify-center">
-          <MainNavigation />
+          <Navigation />
         </div>
         <div className="flex-1 flex justify-end">
           <ThemeToggle />

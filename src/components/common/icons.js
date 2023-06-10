@@ -2,6 +2,7 @@ import {
   Check,
   ChevronDown,
   ChevronRight,
+  ChevronUp,
   Circle,
   Laptop,
   Moon,
@@ -13,4 +14,14 @@ const Spotify = (props) => {
 };
 Spotify.displayName = "Spotify";
 
-export { Check, ChevronDown, ChevronRight, Circle, Laptop, Moon, Spotify, Sun };
+export {
+  Check,
+  ChevronDown,
+  ChevronRight,
+  ChevronUp,
+  Circle,
+  Laptop,
+  Moon,
+  Spotify,
+  Sun,
+};
