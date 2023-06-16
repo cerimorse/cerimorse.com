@@ -4,6 +4,7 @@ import { fontSans } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { AppBar } from "@/components/layout/app-bar";
+import { Footer } from "@/components/layout/footer";
 
 export const metadata = {
   title: "Create Next App",
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <AppBar />
           <main className="bg-background min-h-screen">{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

@@ -5,8 +5,8 @@ import { ThemeToggle } from "@/components/layout/theme-toggle";
 
 export function AppBar() {
   return (
-    <header className="sticky top-0 z-40 w-full">
-      <div className="px-4 sm:px-8 h-14 flex items-center">
+    <header className="sticky top-0 w-full z-40 bg-background">
+      <div className="px-4 h-14 flex items-center sm:px-8">
         <div className="flex-1 flex">
           <Link href="/" className="inline-flex items-center space-x-2">
             <CircleIcon className="h-6 w-6" />
