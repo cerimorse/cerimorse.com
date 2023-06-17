@@ -3,8 +3,15 @@ import {
   Github as GithubIcon,
   Linkedin as LinkedinIcon,
   Mail as MailIcon,
+  Spotify as SpotifyIcon,
 } from "@/components/common/icons";
 import { Button } from "@/components/common/button";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "@/components/common/accordion";
 import { Separator } from "@/components/common/separator";
 
 const pages = [
@@ -18,14 +25,14 @@ export function Footer() {
   return (
     <footer>
       <Separator />
-      <div className="max-w-screen-lg px-4 mx-auto mt-4 mb-2 grid gap-4 grid-cols-12 sm:px-8 sm:mt-8 sm:mb-4 md:gap-8">
+      <div className="max-w-screen-xl px-4 mx-auto mt-4 mb-2 grid gap-4 grid-cols-12 sm:px-8 sm:mt-8 sm:mb-4 md:gap-8">
         <div className="col-span-12 md:col-span-6">
           <h5>Ceri Morse</h5>
           <p>
             Designing and developing full stack software solutions that are
             responsive and accessible.
           </p>
-          <div className="flex items-center space-x-1">
+          <div className="space-x-1 mt-2 flex items-center">
             <Button
               asChild
               variant="ghost"
@@ -62,16 +69,30 @@ export function Footer() {
               </Link>
             </Button>
           </div>
-          <div>Spotify Not Playing</div>
+          <div className="mt-2 flex items-center">
+            <SpotifyIcon className="h-6 w-6" />
+            <span className="ml-3">Not Playing</span>
+          </div>
         </div>
         <div className="col-span-12 md:col-span-4">
-          <h4>Sitemap</h4>
           <div className="hidden md:inline-block">
-            {pages.map(({ path, label }) => (
-              <p key={label}>{label}</p>
-            ))}
+            <h4>Sitemap</h4>
+            <div>
+              {pages.map(({ path, label }) => (
+                <p key={label}>{label}</p>
+              ))}
+            </div>
           </div>
-          <div className="md:hidden">Accordion</div>
+          <Accordion type="single" collapsible className="md:hidden">
+            <AccordionItem value="sitemap" className="border-t">
+              <AccordionTrigger>Sitemap</AccordionTrigger>
+              <AccordionContent>
+                {pages.map(({ path, label }) => (
+                  <p key={label}>{label}</p>
+                ))}
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
         <div className="col-span-12 md:col-span-2">
           <h5>Art</h5>
