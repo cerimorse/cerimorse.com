@@ -129,7 +129,7 @@ export function Footer() {
           <div>Picture of art</div>
         </div>
         <div className="col-span-12">
-          <p>{`© ${new Date().getFullYear()} Ceri Morse. All Rights Reserved.`}</p>
+          <Typography variant="body">{`© ${new Date().getFullYear()} Ceri Morse. All Rights Reserved.`}</Typography>
         </div>
       </div>
     </footer>
