@@ -2,9 +2,9 @@
 
 import * as React from "react";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
 import { ChevronDown as ChevronDownIcon } from "@/components/common/icons";
 import { Button } from "@/components/common/button";
+import { Link } from "@/components/common/link";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/common/sheet";
 import {
   navigationMenuTriggerStyle,
@@ -37,7 +37,7 @@ export function Navigation() {
         <NavigationMenuList>
           {pages.map(({ path, label }) => (
             <NavigationMenuItem key={label}>
-              <Link href={path} legacyBehavior passHref>
+              <Link variant="unstyled" href={path} legacyBehavior passHref>
                 <NavigationMenuLink
                   active={pathname === path}
                   className={navigationMenuTriggerStyle()}
@@ -61,7 +61,7 @@ export function Navigation() {
             <NavigationMenuList className="flex-col">
               {pages.map(({ path, label }) => (
                 <NavigationMenuItem key={label}>
-                  <Link href={path} legacyBehavior passHref>
+                  <Link variant="unstyled" href={path} legacyBehavior passHref>
                     <NavigationMenuLink
                       className={navigationMenuTriggerStyle()}
                       onClick={() => handleMobileNavigationChange(false)}
