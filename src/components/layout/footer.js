@@ -2,7 +2,6 @@ import {
   Github as GithubIcon,
   Linkedin as LinkedinIcon,
   Mail as MailIcon,
-  Spotify as SpotifyIcon,
 } from "@/components/common/icons";
 import { Button } from "@/components/common/button";
 import { Link } from "@/components/common/link";
@@ -15,6 +14,7 @@ import {
 import { Separator } from "@/components/common/separator";
 import { Typography } from "@/components/common/typography";
 import { SpotifyPlaying } from "@/components/layout/spotify-playing";
+import { FlickrRandom } from "@/components/layout/flickr-random";
 
 const pages = {
   info: [
@@ -124,8 +124,11 @@ export function Footer() {
             </AccordionItem>
           </Accordion>
         </div>
-        <div className="col-span-12 md:col-span-2">
+        <div className="col-span-12 flex flex-col md:col-span-2">
           <Typography variant="h5">Artwork</Typography>
+          <div className="mt-4 inline-flex h-24 md:h-auto md:flex-1 ">
+            <FlickrRandom />
+          </div>
         </div>
         <div className="col-span-12">
           <Typography variant="body">{`© ${new Date().getFullYear()} Ceri Morse. All Rights Reserved.`}</Typography>
