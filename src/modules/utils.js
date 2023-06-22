@@ -5,4 +5,6 @@ const cn = (...inputs) => {
   return twMerge(clsx(inputs));
 };
 
-export { cn };
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
+
+export { cn, fetcher };

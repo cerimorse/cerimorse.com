@@ -14,6 +14,7 @@ import {
 } from "@/components/common/accordion";
 import { Separator } from "@/components/common/separator";
 import { Typography } from "@/components/common/typography";
+import { SpotifyPlaying } from "@/components/layout/spotify-playing";
 
 const pages = {
   info: [
@@ -77,11 +78,8 @@ export function Footer() {
               </Link>
             </Button>
           </div>
-          <div className="mt-2 flex items-center">
-            <SpotifyIcon className="h-6 w-6" />
-            <span className="ml-3 whitespace-nowrap overflow-hidden text-ellipsis">
-              Not Playing
-            </span>
+          <div className="mt-2">
+            <SpotifyPlaying />
           </div>
         </div>
         <div className="col-span-12 md:col-span-4">
