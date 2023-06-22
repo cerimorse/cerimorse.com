@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 
-import { fontSans } from "@/lib/fonts";
-import { cn } from "@/lib/utils";
+import { fontSans } from "@/modules/fonts";
+import { cn } from "@/modules/utils";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { AppBar } from "@/components/layout/app-bar";
 import { Footer } from "@/components/layout/footer";

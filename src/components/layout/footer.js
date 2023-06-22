@@ -79,7 +79,9 @@ export function Footer() {
           </div>
           <div className="mt-2 flex items-center">
             <SpotifyIcon className="h-6 w-6" />
-            <span className="ml-3">Not Playing</span>
+            <span className="ml-3 whitespace-nowrap overflow-hidden text-ellipsis">
+              Not Playing
+            </span>
           </div>
         </div>
         <div className="col-span-12 md:col-span-4">
@@ -126,7 +128,6 @@ export function Footer() {
         </div>
         <div className="col-span-12 md:col-span-2">
           <Typography variant="h5">Artwork</Typography>
-          <div>Picture of art</div>
         </div>
         <div className="col-span-12">
           <Typography variant="body">{`© ${new Date().getFullYear()} Ceri Morse. All Rights Reserved.`}</Typography>

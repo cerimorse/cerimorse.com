@@ -1,12 +1,12 @@
 import * as React from "react";
 import NextLink from "next/link";
 import { cva } from "class-variance-authority";
-import { cn } from "@/lib/utils";
+import { cn } from "@/modules/utils";
 
 const linkVariants = cva("", {
   variants: {
     variant: {
-      default: "underline-offset-4 hover:underline text-primary",
+      default: "text-primary underline-offset-4 hover:underline",
       unstyled: "",
     },
   },
