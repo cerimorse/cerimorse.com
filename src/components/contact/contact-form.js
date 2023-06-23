@@ -3,6 +3,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import { useToast } from "@/hooks/use-toast";
 import {
   Form,
   FormControl,
@@ -38,10 +39,19 @@ export function ContactForm() {
       message: "",
     },
   });
+  const { toast } = useToast();
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     console.log(data);
+    toast({
+      title: "Submission sent.",
+      description: "Thank you for your message. I'll be in touch soon.",
+    });
   };
+
+  const {
+    formState: { isSubmitting, isSubmitSuccessful },
+  } = form;
 
   return (
     <Form {...form}>
@@ -98,9 +108,11 @@ export function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" className="float-right">
-          Submit
-        </Button>
+        <div className="flex justify-end">
+          <Button type="submit" disabled={isSubmitting || isSubmitSuccessful}>
+            Submit
+          </Button>
+        </div>
       </form>
     </Form>
   );
