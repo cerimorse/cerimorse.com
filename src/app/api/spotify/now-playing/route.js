@@ -8,6 +8,7 @@ export async function GET() {
     return NextResponse.json({ isPlaying: false });
   } else {
     const { is_playing, item } = await response.json();
+
     return NextResponse.json({
       isPlaying: is_playing,
       title: item.name,

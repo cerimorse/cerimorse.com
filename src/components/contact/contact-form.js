@@ -42,11 +42,16 @@ export function ContactForm() {
   const { toast } = useToast();
 
   const onSubmit = async (data) => {
-    console.log(data);
-    toast({
-      title: "Submission sent.",
-      description: "Thank you for your message. I'll be in touch soon.",
+    const response = await fetch("/api/mail", {
+      method: "POST",
+      body: JSON.stringify(data),
     });
+    if (response.ok) {
+      toast({
+        title: "Submission sent.",
+        description: "Thank you for your message. I'll be in touch soon.",
+      });
+    }
   };
 
   const {
