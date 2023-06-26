@@ -107,7 +107,7 @@ export function Footer() {
               <Typography asChild variant="h5">
                 <AccordionTrigger>Sitemap</AccordionTrigger>
               </Typography>
-              <AccordionContent>
+              <AccordionContent className="text-base">
                 <div className="flex flex-col leading-7">
                   {pages.info.map(({ path, label }) => (
                     <Link key={label} href={path} className="w-fit">

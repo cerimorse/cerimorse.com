@@ -56,8 +56,8 @@ export function Navigation() {
             <ChevronDownIcon className="w-4 h-4 ml-2" />
           </Button>
         </SheetTrigger>
-        <SheetContent position="top" size="full">
-          <NavigationMenu orientation="vertical" className="mt-8">
+        <SheetContent side="top" className="h-screen">
+          <NavigationMenu orientation="vertical" className="mt-8 max-w-full">
             <NavigationMenuList className="flex-col">
               {pages.map(({ path, label }) => (
                 <NavigationMenuItem key={label}>

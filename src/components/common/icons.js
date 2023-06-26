@@ -10,6 +10,7 @@ import {
   Mail,
   Moon,
   Sun,
+  X,
 } from "lucide-react";
 
 const Spotify = (props) => {
@@ -37,4 +38,5 @@ export {
   Moon,
   Spotify,
   Sun,
+  X,
 };
