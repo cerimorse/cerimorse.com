@@ -68,7 +68,10 @@ export function ContactForm() {
             <FormItem>
               <FormLabel>Name</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  disabled={isSubmitting || isSubmitSuccessful}
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -81,7 +84,10 @@ export function ContactForm() {
             <FormItem>
               <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  disabled={isSubmitting || isSubmitSuccessful}
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -94,7 +100,10 @@ export function ContactForm() {
             <FormItem>
               <FormLabel>Subject</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input
+                  disabled={isSubmitting || isSubmitSuccessful}
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -107,7 +116,10 @@ export function ContactForm() {
             <FormItem>
               <FormLabel>Message</FormLabel>
               <FormControl>
-                <Textarea {...field} />
+                <Textarea
+                  disabled={isSubmitting || isSubmitSuccessful}
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>

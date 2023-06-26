@@ -15,8 +15,10 @@ import { Text } from "@react-email/text";
 const ContactEmail = ({ name, email, message }) => {
   return (
     <Html lang="en" dir="ltr">
-      <Head />
-      <Preview></Preview>
+      <Head>
+        <title>Contact Form Email</title>
+      </Head>
+      <Preview>{message}</Preview>
       <Tailwind>
         <Body className="bg-slate-50 p-4 my-auto mx-auto font-sans">
           <Container className="p-8 border rounded border-slate-500 bg-white">
@@ -29,17 +31,9 @@ const ContactEmail = ({ name, email, message }) => {
             </Section>
             <Section>
               <Text className="text-base">
-                You can send a response to {name} by using the button below or
-                forwarding this email to {email}.
+                You can send a response to {name} by forwarding this email to{" "}
+                {email}.
               </Text>
-              <Button
-                href={`mailto:${email}`}
-                pX={20}
-                pY={12}
-                className="bg-black rounded text-white text-base font-semibold no-underline text-center"
-              >
-                Send a response
-              </Button>
             </Section>
             <Section className="mt-8">
               <Hr />
