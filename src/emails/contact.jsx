@@ -6,7 +6,6 @@ import { Tailwind } from "@react-email/tailwind";
 import { Body } from "@react-email/body";
 import { Container } from "@react-email/container";
 import { Section } from "@react-email/section";
-import { Button } from "@react-email/button";
 import { Link } from "@react-email/link";
 import { Hr } from "@react-email/hr";
 import { Heading } from "@react-email/heading";
