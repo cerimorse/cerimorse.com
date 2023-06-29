@@ -1,5 +1,11 @@
 import { data } from "@/modules/timeline";
-import { Github as GithubIcon } from "@/components/common/icons";
+import {
+  Briefcase as BriefcaseIcon,
+  GraduationCap as GraduationCapIcon,
+  School2 as School2Icon,
+  Trophy as TrophyIcon,
+  Users2 as Users2Icon,
+} from "@/components/common/icons";
 import {
   Timeline,
   TimelineItem,
@@ -10,6 +16,14 @@ import {
   TimelineDescription,
 } from "@/components/common/timeline";
 import { Typography } from "@/components/common/typography";
+
+const icons = {
+  award: <TrophyIcon />,
+  education: <GraduationCapIcon />,
+  mentor: <Users2Icon />,
+  training: <School2Icon />,
+  work: <BriefcaseIcon />,
+};
 
 export default function TimelinePage() {
   return (
@@ -26,9 +40,7 @@ export default function TimelinePage() {
               ({ type, date: { value, display }, description }, idx) => (
                 <TimelineItem key={idx}>
                   <TimelineConnector />
-                  <TimelineIcon>
-                    <GithubIcon />
-                  </TimelineIcon>
+                  <TimelineIcon>{icons[type]}</TimelineIcon>
                   <TimelineContent>
                     <TimelineHeader>
                       <time
