@@ -1,15 +1,20 @@
 import {
+  Briefcase,
   Check,
   ChevronDown,
   ChevronRight,
   ChevronUp,
   Circle,
   Github,
+  GraduationCap,
   Laptop,
   Linkedin,
   Mail,
   Moon,
+  School2,
   Sun,
+  Trophy,
+  Users2,
   X,
 } from "lucide-react";
 
@@ -26,17 +31,22 @@ const Spotify = (props) => {
 Spotify.displayName = "Spotify";
 
 export {
+  Briefcase,
   Check,
   ChevronDown,
   ChevronRight,
   ChevronUp,
   Circle,
   Github,
+  GraduationCap,
   Laptop,
   Linkedin,
   Mail,
   Moon,
+  School2,
   Spotify,
   Sun,
+  Trophy,
+  Users2,
   X,
 };
