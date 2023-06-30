@@ -21,7 +21,7 @@ const TimelineConnector = React.forwardRef(
       )}
       {...props}
     >
-      <span className="h-full w-0.5 bg-border" />
+      <span className="h-full w-0.5 bg-accent" />
       {children}
     </span>
   )
@@ -32,7 +32,7 @@ const TimelineIcon = React.forwardRef(({ className, ...props }, ref) => (
   <span
     ref={ref}
     className={cn(
-      "relative inline-flex items-center justify-center h-8 w-8 shrink-0 overflow-hidden rounded-full bg-border",
+      "relative inline-flex items-center justify-center h-8 w-8 shrink-0 overflow-hidden rounded-full bg-accent",
       className
     )}
     {...props}
