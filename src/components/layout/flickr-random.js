@@ -1,9 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import useSwr from "swr";
-import { loader } from "@/lib/flickr";
 import { fetcher } from "@/modules/utils";
+import { FlickrImage } from "@/components/common/image";
 import { Link } from "@/components/common/link";
 
 export function FlickrRandom() {
@@ -21,12 +20,11 @@ export function FlickrRandom() {
       rel="noopener"
       className="relative h-full w-full overflow-hidden"
     >
-      <Image
+      <FlickrImage
         src={`${data.server}/${data.id}_${data.secret}.jpg`}
         alt={data.title}
         fill
         sizes="(min-width: 0px) 100vw, (min-width: 768px) 20vw"
-        loader={loader}
         className="object-cover"
       />
     </Link>
