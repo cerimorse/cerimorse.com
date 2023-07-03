@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { data } from "@/modules/timeline";
+import { timeline } from "@/modules/content";
 import {
   Briefcase as BriefcaseIcon,
   GraduationCap as GraduationCapIcon,
@@ -32,11 +32,11 @@ const icons = {
 export function TimelineMoments() {
   const [filteredTypes, setFilteredTypes] = React.useState([]);
 
-  const filteredData = React.useMemo(() => {
+  const filteredTimeline = React.useMemo(() => {
     if (filteredTypes.length === 0) {
-      return data;
+      return timeline;
     }
-    return data.filter(({ type }) => filteredTypes.includes(type));
+    return timeline.filter(({ type }) => filteredTypes.includes(type));
   }, [filteredTypes]);
 
   const handleTypeToggle = (type) => () => {
@@ -52,7 +52,7 @@ export function TimelineMoments() {
     });
   };
 
-  const types = [...new Set(data.map(({ type }) => type))];
+  const types = [...new Set(timeline.map(({ type }) => type))];
 
   return (
     <div className="grid grid-cols-12 gap-4 md:gap-8">
@@ -78,7 +78,7 @@ export function TimelineMoments() {
       </div>
       <div className="col-span-12 md:col-span-6">
         <Timeline>
-          {filteredData.map(
+          {filteredTimeline.map(
             ({ type, date: { value, display }, description }, idx) => (
               <TimelineItem key={idx}>
                 <TimelineConnector />
