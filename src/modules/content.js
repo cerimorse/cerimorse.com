@@ -21,6 +21,63 @@ const characteristics = [
   },
 ];
 
+const skills = [
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Tailwind",
+  "Node.js",
+  "Express.js",
+  "NestJS",
+  "Prisma",
+  "PostgreSQL",
+  "MongoDB",
+  "Strapi",
+  "GitHub",
+  "AWS",
+  "Azure",
+  "Vercel",
+];
+
+const career = [
+  {
+    type: "work",
+    date: {
+      value: "2022-04",
+      display: "April 2022",
+    },
+    description: "Senior software developer and technical lead at Arup.",
+  },
+  {
+    type: "work",
+    date: {
+      value: "2013-09",
+      display: "September 2013",
+    },
+    description:
+      "Software engineer in the retail and online markets at Astra Games.",
+  },
+  {
+    type: "education",
+    date: {
+      value: "2012-10",
+      display: "October 2012",
+    },
+    description:
+      "Modelled rugby lineout strategies with the Welsh Rugby Union.",
+  },
+  {
+    type: "education",
+    date: {
+      value: "2009-09",
+      display: "September 2009",
+    },
+    description:
+      "Studied Mathematics and its Applications at Cardiff University.",
+  },
+];
+
 const technology = [
   {
     name: "Frontend",
@@ -333,4 +390,4 @@ const timeline = [
   },
 ];
 
-export { characteristics, technology, hobbies, timeline };
+export { characteristics, skills, career, technology, hobbies, timeline };
