@@ -78,6 +78,27 @@ const career = [
   },
 ];
 
+const testimonials = [
+  {
+    name: "Person 1",
+    job: "Software Developer",
+    avatar: "",
+    quote: "Say something nice about me here",
+  },
+  {
+    name: "Person 2",
+    job: "Software Developer",
+    avatar: "",
+    quote: "Say something nice about me here",
+  },
+  {
+    name: "Person 3",
+    job: "Software Developer",
+    avatar: "",
+    quote: "Say something nice about me here",
+  },
+];
+
 const technology = [
   {
     name: "Frontend",
@@ -390,4 +411,12 @@ const timeline = [
   },
 ];
 
-export { characteristics, skills, career, technology, hobbies, timeline };
+export {
+  characteristics,
+  skills,
+  career,
+  testimonials,
+  technology,
+  hobbies,
+  timeline,
+};

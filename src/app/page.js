@@ -4,6 +4,7 @@ import { Typography } from "@/components/common/typography";
 import { Characteristics } from "@/components/home/characteristics";
 import { SkillsMarquee } from "@/components/home/skills-marquee";
 import { BasicTimeline } from "@/components/home/basic-timeline";
+import { Testimonials } from "@/components/home/testimonials";
 
 export default function Home() {
   return (
@@ -73,6 +74,19 @@ export default function Home() {
               </Link>
             </Button>
           </div>
+        </div>
+      </section>
+      <section className="max-w-screen-lg px-4 py-16 mx-auto sm:px-8">
+        <div className="flex flex-col items-center space-y-12">
+          <div className="space-y-4">
+            <Typography variant="h3" className="text-center">
+              {"I've worked with some amazing people during my career."}
+            </Typography>
+            <Typography variant="h3" className="text-center">
+              See what some of them have to say about our time working together.
+            </Typography>
+          </div>
+          <Testimonials />
         </div>
       </section>
     </>
