@@ -28,15 +28,32 @@ const Carousel = ({ options = {}, className, ...props }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     watchDrag: (_, event) => {
-      // we can check in here for a mouse event or touch event
-      // maybe don't allow drag on mouse event
+      if (event.type === "mousedown") {
+        return false;
+      }
       return true;
     },
     ...options,
   });
+  const [currentIndex, setCurrentIndex] = React.useState(0);
+
+  React.useEffect(() => {
+    const handleSelectChange = () => {
+      const index = emblaApi.selectedScrollSnap();
+      setCurrentIndex(index || 0);
+    };
+
+    emblaApi?.on("select", handleSelectChange);
+
+    return () => {
+      emblaApi?.off("select", handleSelectChange);
+    };
+  }, [emblaApi]);
+
+  const selectedIndex = React.useCallback(() => currentIndex, [currentIndex]);
 
   return (
-    <CarouselContext.Provider value={{ api: emblaApi }}>
+    <CarouselContext.Provider value={{ api: { ...emblaApi, selectedIndex } }}>
       <div
         ref={emblaRef}
         className={cn("relative w-full overflow-hidden", className)}
@@ -84,12 +101,15 @@ CarouselControls.displayName = "CarouselControls";
 
 const CarouselTrigger = React.forwardRef(
   ({ index, className, ...props }, ref) => {
-    const { scrollTo } = useCarousel();
+    const { scrollTo, selectedIndex } = useCarousel();
+
+    const currentIndex = selectedIndex();
+    const selected = currentIndex === index;
 
     return (
       <button
         ref={ref}
-        // data-selected={selected ? "" : undefined}
+        data-selected={selected ? "" : undefined}
         className={cn(
           "h-2 w-2 inline-flex items-center justify-center rounded-full text-sm font-medium bg-primary/90 ring-offset-background transition-colors hover:bg-primary data-[selected]:bg-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
           className
