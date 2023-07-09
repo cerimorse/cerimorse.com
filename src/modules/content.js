@@ -99,6 +99,24 @@ const testimonials = [
   },
 ];
 
+const contact = [
+  {
+    name: "Job Opportunities",
+    description:
+      "I'm always interested in hearing about exciting job opportunities. This could be anything from a personal project you need some input or help with, to a role you're advertising that you think I'd be a good fit for. Everything is, of course, time-dependent and I have to say, I enjoy what I'm doing right now, so it'll have to be something special!",
+  },
+  {
+    name: "Mentoring",
+    description:
+      "I've had some really good mentors during my career as a software developer. It hasn't always been about the coding aspect. Some have helped improve my understanding of the business aspects involved too. I love giving back to the community and helping new developers in any way that I can. If you're interested in having a mentor, even if it's just for a short period of time, then give me a message and we'll try to sort something out!",
+  },
+  {
+    name: "Questions",
+    description:
+      "I'll happily answer any questions you may have. If you're interested in knowing how I built this site or if you have a question about how I lead teams in delivering accessible software solutions, then don't hesitate to get in touch. There is no such thing as a stupid question!",
+  },
+];
+
 const technology = [
   {
     name: "Frontend",
@@ -416,6 +434,7 @@ export {
   skills,
   career,
   testimonials,
+  contact,
   technology,
   hobbies,
   timeline,

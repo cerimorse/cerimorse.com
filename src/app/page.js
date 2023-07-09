@@ -5,6 +5,7 @@ import { Characteristics } from "@/components/home/characteristics";
 import { SkillsMarquee } from "@/components/home/skills-marquee";
 import { BasicTimeline } from "@/components/home/basic-timeline";
 import { Testimonials } from "@/components/home/testimonials";
+import { ContactItems } from "@/components/home/contact-items";
 
 export default function Home() {
   return (
@@ -87,6 +88,28 @@ export default function Home() {
             </Typography>
           </div>
           <Testimonials />
+        </div>
+      </section>
+      <section className="max-w-screen-lg px-4 py-16 mx-auto sm:px-8">
+        <div className="grid grid-cols-3 gap-4 md:gap-8">
+          <div className="col-span-3 space-y-12 md:col-span-1">
+            <div className="mt-2">
+              <Typography variant="h2">{"Let's collaborate."}</Typography>
+            </div>
+            <Button asChild size="lg" className="hidden md:inline-flex">
+              <Link variant="unstyled" href="/contact">
+                Contact me
+              </Link>
+            </Button>
+          </div>
+          <div className="col-span-3 space-y-8 md:col-span-2">
+            <ContactItems />
+            <Button asChild size="lg" className="md:hidden">
+              <Link variant="unstyled" href="/contact">
+                Contact me
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
     </>
