@@ -1,3 +1,4 @@
+import { CloudinaryImage } from "@/components/common/image";
 import { Button } from "@/components/common/button";
 import { Link } from "@/components/common/link";
 import { Typography } from "@/components/common/typography";
@@ -10,6 +11,41 @@ import { ContactItems } from "@/components/home/contact-items";
 export default function Home() {
   return (
     <>
+      <section className="max-w-screen-xl h-[calc(100vh-3.5rem)] min-h-[600px] max-h-[900px] px-4 mx-auto sm:px-8">
+        <div className="flex flex-col-reverse gap-8 h-full md:flex-row md:gap-16">
+          <div className="flex-1 flex flex-col items-center space-y-8 md:items-start md:justify-center">
+            <span className="text-muted-foreground">
+              Design. Develop. Deploy
+            </span>
+            <Typography variant="h1">Ceri Morse</Typography>
+            <Typography variant="h4" className="text-center md:text-left">
+              Creating immersive digital experiences with cutting-edge web
+              technologies, merging creativity and coding.
+            </Typography>
+            <div className="flex space-x-4">
+              <Button asChild size="lg">
+                <Link variant="unstyled" href="/about">
+                  About
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="lg">
+                <Link variant="unstyled" href="/contact">
+                  Contact
+                </Link>
+              </Button>
+            </div>
+          </div>
+          <div className="flex-1 flex items-center justify-center relative">
+            <CloudinaryImage
+              src="pages/about/horizon"
+              alt="Alt tag"
+              fill
+              sizes="(min-width: 0px) 100vw, (min-width: 768px) 50vw"
+              className="object-contain"
+            />
+          </div>
+        </div>
+      </section>
       <section className="max-w-screen-lg px-4 py-16 mx-auto sm:px-8">
         <div className="flex flex-col justify-center space-y-12">
           <div className="space-y-4">
@@ -98,7 +134,7 @@ export default function Home() {
             </div>
             <Button asChild size="lg" className="hidden md:inline-flex">
               <Link variant="unstyled" href="/contact">
-                Contact me
+                Get in contact
               </Link>
             </Button>
           </div>
