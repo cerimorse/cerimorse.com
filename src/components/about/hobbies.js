@@ -1,4 +1,4 @@
-import { data } from "@/modules/hobbies";
+import { hobbies } from "@/modules/content";
 import { CloudinaryImage } from "@/components/common/image";
 import {
   Card,
@@ -11,7 +11,7 @@ import { Typography } from "@/components/common/typography";
 export function Hobbies() {
   return (
     <div className="grid grid-cols-12 gap-4 md:gap-8">
-      {data.map(({ name, description, image }) => (
+      {hobbies.map(({ name, description, image }) => (
         <Card key={name} className="col-span-12 overflow-hidden md:col-span-6">
           <div className="relative h-80">
             <CloudinaryImage

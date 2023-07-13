@@ -1,4 +1,4 @@
-import { data } from "@/modules/technology";
+import { technology } from "@/modules/content";
 import {
   Aws as AwsIcon,
   Azure as AzureIcon,
@@ -59,7 +59,7 @@ const icons = {
 export function Technology() {
   return (
     <div className="grid grid-cols-12 gap-4 md:gap-8">
-      {data.map(({ name, description, items }) => (
+      {technology.map(({ name, description, items }) => (
         <Card key={name} className="col-span-12 md:col-span-4">
           <CardHeader className="md:min-h-[9rem]">
             <CardTitle>{name}</CardTitle>

@@ -1,4 +1,196 @@
-const data = [
+const characteristics = [
+  {
+    name: "Fullstack",
+    description:
+      "I enjoy the challenge of working across the entire technology stack.",
+  },
+  {
+    name: "Responsive",
+    description:
+      "All websites I create are adaptive to the media that renders them.",
+  },
+  {
+    name: "Accessible",
+    description:
+      "Everyone should to be able to use the websites that I build without complaint.",
+  },
+  {
+    name: "Mentoring",
+    description:
+      "I love helping fellow developers improve and grow their skillset.",
+  },
+];
+
+const skills = [
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Tailwind",
+  "Node.js",
+  "Express.js",
+  "NestJS",
+  "Prisma",
+  "PostgreSQL",
+  "MongoDB",
+  "Strapi",
+  "GitHub",
+  "AWS",
+  "Azure",
+  "Vercel",
+];
+
+const career = [
+  {
+    type: "work",
+    date: {
+      value: "2022-04",
+      display: "April 2022",
+    },
+    description: "Senior software developer and technical lead at Arup.",
+  },
+  {
+    type: "work",
+    date: {
+      value: "2013-09",
+      display: "September 2013",
+    },
+    description:
+      "Software engineer in the retail and online markets at Astra Games.",
+  },
+  {
+    type: "education",
+    date: {
+      value: "2012-10",
+      display: "October 2012",
+    },
+    description:
+      "Modelled rugby lineout strategies with the Welsh Rugby Union.",
+  },
+  {
+    type: "education",
+    date: {
+      value: "2009-09",
+      display: "September 2009",
+    },
+    description:
+      "Studied Mathematics and its Applications at Cardiff University.",
+  },
+];
+
+const testimonials = [
+  {
+    name: "Person 1",
+    job: "Software Developer",
+    avatar: "",
+    quote: "Say something nice about me here",
+  },
+  {
+    name: "Person 2",
+    job: "Software Developer",
+    avatar: "",
+    quote: "Say something nice about me here",
+  },
+  {
+    name: "Person 3",
+    job: "Software Developer",
+    avatar: "",
+    quote: "Say something nice about me here",
+  },
+];
+
+const contact = [
+  {
+    name: "Job Opportunities",
+    description:
+      "I'm always interested in hearing about exciting job opportunities. This could be anything from a personal project you need some input or help with, to a role you're advertising that you think I'd be a good fit for. Everything is, of course, time-dependent and I have to say, I enjoy what I'm doing right now, so it'll have to be something special!",
+  },
+  {
+    name: "Mentoring",
+    description:
+      "I've had some really good mentors during my career as a software developer. It hasn't always been about the coding aspect. Some have helped improve my understanding of the business aspects involved too. I love giving back to the community and helping new developers in any way that I can. If you're interested in having a mentor, even if it's just for a short period of time, then give me a message and we'll try to sort something out!",
+  },
+  {
+    name: "Questions",
+    description:
+      "I'll happily answer any questions you may have. If you're interested in knowing how I built this site or if you have a question about how I lead teams in delivering accessible software solutions, then don't hesitate to get in touch. There is no such thing as a stupid question!",
+  },
+];
+
+const technology = [
+  {
+    name: "Frontend",
+    description:
+      "I take a lot of pride in creating accessible applications; the web is for everyone.",
+    items: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "MUI",
+      "Tailwind CSS",
+      "Next.js",
+    ],
+  },
+  {
+    name: "Backend",
+    description:
+      "I value clean and modular design with a focus on code reuse and readability.",
+    items: [
+      "Node.js",
+      "Express.js",
+      "NestJS",
+      "Prisma",
+      "TypeORM",
+      "Strapi",
+      "PostgreSQL",
+      "MongoDB",
+    ],
+  },
+  {
+    name: "DevOps",
+    description:
+      "I try to make the developer experience for deploying code as seamless as possible.",
+    items: [
+      "GitHub",
+      "GitHub Actions",
+      "Azure",
+      "Azure Pipelines",
+      "AWS",
+      "Vercel",
+    ],
+  },
+];
+
+const hobbies = [
+  {
+    name: "Adventuring",
+    description:
+      "I really enjoy going on adventures! This could be anything from hiking local routes to travelling half way around the world to explore new areas.",
+    image: "pages/about/hobbies/adventuring",
+  },
+  {
+    name: "Sport",
+    description:
+      "Growing up I participated in many different individual and team sports such as karate, golf and football. These days I only really climb and play various racquet sports as a means to keep fit.",
+    image: "pages/about/hobbies/sport",
+  },
+  {
+    name: "Gaming",
+    description:
+      "Ever since playing Duck Hunt on my very first console, the NES, I've enjoyed video games. I mostly play RPG games, with The Elder Scrolls III: Morrowind a personal favourite of mine. Team Fortress 2 and Overwatch have been my go to FPS games.",
+    image: "pages/about/hobbies/gaming",
+  },
+  {
+    name: "Gardening",
+    description:
+      "Having my own green space to get away from technology has been beneficial in many different ways. There's also something quite satisfying about growing your own fruit and vegetables.",
+    image: "pages/about/hobbies/gardening",
+  },
+];
+
+const timeline = [
   {
     type: "work",
     date: {
@@ -237,4 +429,13 @@ const data = [
   },
 ];
 
-export { data };
+export {
+  characteristics,
+  skills,
+  career,
+  testimonials,
+  contact,
+  technology,
+  hobbies,
+  timeline,
+};

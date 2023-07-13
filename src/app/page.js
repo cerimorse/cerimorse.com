@@ -1,113 +1,154 @@
-import Image from "next/image";
+import { CloudinaryImage } from "@/components/common/image";
+import { Button } from "@/components/common/button";
+import { Link } from "@/components/common/link";
+import { Typography } from "@/components/common/typography";
+import { Characteristics } from "@/components/home/characteristics";
+import { SkillsMarquee } from "@/components/home/skills-marquee";
+import { BasicTimeline } from "@/components/home/basic-timeline";
+import { Testimonials } from "@/components/home/testimonials";
+import { ContactItems } from "@/components/home/contact-items";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
+    <>
+      <section className="max-w-screen-xl h-[calc(100vh-3.5rem)] min-h-[600px] max-h-[900px] px-4 mx-auto sm:px-8">
+        <div className="flex flex-col-reverse gap-8 h-full md:flex-row md:gap-16">
+          <div className="flex-1 flex flex-col items-center space-y-8 mb-4 md:items-start md:justify-center md:mb-0">
+            <span className="text-muted-foreground">
+              Design. Develop. Deploy
+            </span>
+            <Typography variant="h1">Ceri Morse</Typography>
+            <Typography variant="h4" className="text-center md:text-left">
+              Building immersive digital experiences with cutting-edge web
+              technologies, merging creativity and coding.
+            </Typography>
+            <div className="flex space-x-4">
+              <Button asChild size="lg">
+                <Link variant="unstyled" href="/about">
+                  About
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="lg">
+                <Link variant="unstyled" href="/contact">
+                  Contact
+                </Link>
+              </Button>
+            </div>
+          </div>
+          <div className="flex-1 flex items-center justify-center relative m-4">
+            <CloudinaryImage
+              src="pages/home/hero"
+              alt="Alt tag"
+              fill
+              sizes="(min-width: 0px) 100vw, (min-width: 768px) 50vw"
               priority
+              className="object-contain"
             />
-          </a>
+          </div>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div> */}
-    </main>
+      </section>
+      <section className="max-w-screen-lg px-4 py-16 mx-auto sm:px-8">
+        <div className="flex flex-col justify-center space-y-12">
+          <div className="space-y-4">
+            <Typography variant="h2" className="text-center">
+              I am passionate about developing software solutions that are
+              responsive and accessible.
+            </Typography>
+            <Typography variant="h2" className="text-center">
+              I believe the web is for everyone and take that into consideration
+              when building an application.
+            </Typography>
+          </div>
+          <Characteristics />
+        </div>
+      </section>
+      <section className="max-w-screen-xl px-4 py-16 mx-auto sm:px-8">
+        <div className="flex flex-col items-center space-y-12">
+          <Typography variant="h3">Something interesting here</Typography>
+          <SkillsMarquee />
+          <Button asChild size="lg">
+            <Link variant="unstyled" href="/about">
+              About me
+            </Link>
+          </Button>
+        </div>
+      </section>
+      <section className="max-w-screen-lg px-4 py-16 mx-auto sm:px-8">
+        <div className="grid grid-cols-2 gap-8">
+          <div className="col-span-2 space-y-8 md:col-span-1">
+            <Typography variant="h3">
+              {"I'm currently working as a Senior Software Developer at Arup."}
+            </Typography>
+            <Typography variant="h3">
+              {"I lead the development of the award winning "}
+              <Link
+                href="https://www.arup.com/services/tools/virtual-engage"
+                target="_blank"
+                rel="noopener"
+              >
+                Virtual Engage
+              </Link>
+              {" product and Arup's unified project data platform, "}
+              <Link
+                href="https://www.arup.com/services/tools/fuse"
+                target="_blank"
+                rel="noopener"
+              >
+                Fuse
+              </Link>
+              {"."}
+            </Typography>
+            <Button asChild size="lg" className="hidden md:inline-flex">
+              <Link variant="unstyled" href="/timeline">
+                Full timeline
+              </Link>
+            </Button>
+          </div>
+          <div className="col-span-2 space-y-8 md:col-span-1">
+            <BasicTimeline />
+            <Button asChild size="lg" className="md:hidden">
+              <Link variant="unstyled" href="/timeline">
+                Full timeline
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+      <section className="max-w-screen-lg px-4 py-16 mx-auto sm:px-8">
+        <div className="flex flex-col items-center space-y-12">
+          <div className="space-y-4">
+            <Typography variant="h3" className="text-center">
+              {"I've worked with some amazing people during my career."}
+            </Typography>
+            <Typography variant="h3" className="text-center">
+              See what some of them have to say about our time working together.
+            </Typography>
+          </div>
+          <Testimonials />
+        </div>
+      </section>
+      <section className="max-w-screen-lg px-4 py-16 mx-auto sm:px-8">
+        <div className="grid grid-cols-3 gap-4 md:gap-8">
+          <div className="col-span-3 space-y-12 md:col-span-1">
+            <div className="mt-2">
+              <Typography variant="h2">{"Let's collaborate."}</Typography>
+            </div>
+            <Button asChild size="lg" className="hidden md:inline-flex">
+              <Link variant="unstyled" href="/contact">
+                Get in contact
+              </Link>
+            </Button>
+          </div>
+          <div className="col-span-3 space-y-8 md:col-span-2">
+            <ContactItems />
+            <Button asChild size="lg" className="md:hidden">
+              <Link variant="unstyled" href="/contact">
+                Contact me
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
