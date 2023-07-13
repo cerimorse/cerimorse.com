@@ -5,7 +5,7 @@ import { ThemeToggle } from "@/components/layout/theme-toggle";
 
 export function AppBar() {
   return (
-    <header className="sticky top-0 w-full z-40 bg-background">
+    <header className="sticky top-0 w-full border-b z-40 supports-backdrop-blur:bg-background/60 bg-background/90 backdrop-blur">
       <div className="px-4 h-14 flex items-center sm:px-8">
         <div className="flex-1 flex">
           <Link
