@@ -37,7 +37,7 @@ export default function Home() {
           </div>
           <div className="flex-1 flex items-center justify-center relative m-4">
             <CloudinaryImage
-              src="pages/home/avatar"
+              src="pages/home/hero"
               alt="Alt tag"
               fill
               sizes="(min-width: 0px) 100vw, (min-width: 768px) 50vw"
