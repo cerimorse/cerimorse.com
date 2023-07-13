@@ -19,7 +19,7 @@ export default function Home() {
             </span>
             <Typography variant="h1">Ceri Morse</Typography>
             <Typography variant="h4" className="text-center md:text-left">
-              Creating immersive digital experiences with cutting-edge web
+              Building immersive digital experiences with cutting-edge web
               technologies, merging creativity and coding.
             </Typography>
             <div className="flex space-x-4">
@@ -35,12 +35,13 @@ export default function Home() {
               </Button>
             </div>
           </div>
-          <div className="flex-1 flex items-center justify-center relative">
+          <div className="flex-1 flex items-center justify-center relative m-4">
             <CloudinaryImage
-              src="pages/about/horizon"
+              src="pages/home/avatar"
               alt="Alt tag"
               fill
               sizes="(min-width: 0px) 100vw, (min-width: 768px) 50vw"
+              priority
               className="object-contain"
             />
           </div>
