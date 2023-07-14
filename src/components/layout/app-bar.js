@@ -1,4 +1,4 @@
-import { Circle as CircleIcon } from "@/components/common/icons";
+import { Logo } from "@/components/common/icons";
 import { Link } from "@/components/common/link";
 import { Navigation } from "@/components/layout/navigation";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
@@ -13,7 +13,7 @@ export function AppBar() {
             href="/"
             className="inline-flex items-center space-x-2"
           >
-            <CircleIcon className="h-6 w-6" />
+            <Logo className="h-6 w-6" />
             <span className="hidden font-bold sm:inline-block">Ceri Morse</span>
           </Link>
         </div>
