@@ -60,7 +60,9 @@ export default function RootLayout({ children }) {
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <AppBar />
-          <main className="bg-background min-h-screen">{children}</main>
+          <main className="bg-background min-h-screen supports-[min-height:100dvh]:min-h-dynamic-screen">
+            {children}
+          </main>
           <Footer />
           <Toaster />
         </ThemeProvider>
