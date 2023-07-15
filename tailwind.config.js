@@ -51,12 +51,6 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
-      height: {
-        "dynamic-screen": "100dvh",
-      },
-      minHeight: {
-        "dynamic-screen": "100dvh",
-      },
       borderRadius: {
         lg: `var(--radius)`,
         md: `calc(var(--radius) - 2px)`,
