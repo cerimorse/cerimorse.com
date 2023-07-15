@@ -1,6 +1,10 @@
 import { Typography } from "@/components/common/typography";
 import { ContactForm } from "@/components/contact/contact-form";
 
+export const metadata = {
+  title: "Contact",
+};
+
 export default function ContactPage() {
   return (
     <section className="max-w-screen-md px-4 py-16 mx-auto sm:px-8">

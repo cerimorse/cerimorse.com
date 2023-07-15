@@ -3,6 +3,10 @@ import { Typography } from "@/components/common/typography";
 import { Technology } from "@/components/about/technology";
 import { Hobbies } from "@/components/about/hobbies";
 
+export const metadata = {
+  title: "About",
+};
+
 export default function AboutPage() {
   return (
     <>
