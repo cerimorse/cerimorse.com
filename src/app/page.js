@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <section className="max-w-screen-xl h-[calc(100vh-3.5rem)] min-h-[600px] max-h-[900px] px-4 mx-auto sm:px-8">
         <div className="flex flex-col-reverse gap-8 h-full md:flex-row md:gap-16">
-          <div className="flex-1 flex flex-col items-center space-y-8 mb-4 md:items-start md:justify-center md:mb-0">
+          <div className="flex-1 flex flex-col items-center space-y-8 mb-16 md:items-start md:justify-center md:mb-0">
             <span className="text-muted-foreground">
               Design. Develop. Deploy
             </span>
