@@ -73,44 +73,48 @@ export default function Home() {
           </Button>
         </div>
       </section>
-      <section className="max-w-screen-lg px-4 py-16 mx-auto sm:px-8">
-        <div className="grid grid-cols-2 gap-8">
-          <div className="col-span-2 space-y-8 md:col-span-1">
-            <Typography variant="h3">
-              {"I'm currently working as a Senior Software Developer at Arup."}
-            </Typography>
-            <Typography variant="h3">
-              {"I lead the development of the award winning "}
-              <Link
-                href="https://www.arup.com/services/tools/virtual-engage"
-                target="_blank"
-                rel="noopener"
-              >
-                Virtual Engage
-              </Link>
-              {" product and Arup's unified project data platform, "}
-              <Link
-                href="https://www.arup.com/services/tools/fuse"
-                target="_blank"
-                rel="noopener"
-              >
-                Fuse
-              </Link>
-              {"."}
-            </Typography>
-            <Button asChild size="lg" className="hidden md:inline-flex">
-              <Link variant="unstyled" href="/timeline">
-                Full timeline
-              </Link>
-            </Button>
-          </div>
-          <div className="col-span-2 space-y-8 md:col-span-1">
-            <BasicTimeline />
-            <Button asChild size="lg" className="md:hidden">
-              <Link variant="unstyled" href="/timeline">
-                Full timeline
-              </Link>
-            </Button>
+      <section className="py-16 bg-muted">
+        <div className="max-w-screen-lg px-4 mx-auto sm:px-8">
+          <div className="grid grid-cols-2 gap-8">
+            <div className="col-span-2 space-y-8 md:col-span-1">
+              <Typography variant="h3">
+                {
+                  "I'm currently working as a Senior Software Developer at Arup."
+                }
+              </Typography>
+              <Typography variant="h3">
+                {"I lead the development of the award winning "}
+                <Link
+                  href="https://www.arup.com/services/tools/virtual-engage"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Virtual Engage
+                </Link>
+                {" product and Arup's unified project data platform, "}
+                <Link
+                  href="https://www.arup.com/services/tools/fuse"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Fuse
+                </Link>
+                {"."}
+              </Typography>
+              <Button asChild size="lg" className="hidden md:inline-flex">
+                <Link variant="unstyled" href="/timeline">
+                  Full timeline
+                </Link>
+              </Button>
+            </div>
+            <div className="col-span-2 space-y-8 md:col-span-1">
+              <BasicTimeline />
+              <Button asChild size="lg" className="md:hidden">
+                <Link variant="unstyled" href="/timeline">
+                  Full timeline
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -127,25 +131,27 @@ export default function Home() {
           <Testimonials />
         </div>
       </section>
-      <section className="max-w-screen-lg px-4 py-16 mx-auto sm:px-8">
-        <div className="grid grid-cols-3 gap-4 md:gap-8">
-          <div className="col-span-3 space-y-12 md:col-span-1">
-            <div className="mt-2">
-              <Typography variant="h2">{"Let's collaborate."}</Typography>
+      <section className="py-16 bg-muted">
+        <div className="max-w-screen-lg px-4 mx-auto sm:px-8">
+          <div className="grid grid-cols-3 gap-4 md:gap-8">
+            <div className="col-span-3 space-y-12 md:col-span-1">
+              <div className="mt-2">
+                <Typography variant="h2">{"Let's collaborate."}</Typography>
+              </div>
+              <Button asChild size="lg" className="hidden md:inline-flex">
+                <Link variant="unstyled" href="/contact">
+                  Get in contact
+                </Link>
+              </Button>
             </div>
-            <Button asChild size="lg" className="hidden md:inline-flex">
-              <Link variant="unstyled" href="/contact">
-                Get in contact
-              </Link>
-            </Button>
-          </div>
-          <div className="col-span-3 space-y-8 md:col-span-2">
-            <ContactItems />
-            <Button asChild size="lg" className="md:hidden">
-              <Link variant="unstyled" href="/contact">
-                Contact me
-              </Link>
-            </Button>
+            <div className="col-span-3 space-y-8 md:col-span-2">
+              <ContactItems />
+              <Button asChild size="lg" className="md:hidden">
+                <Link variant="unstyled" href="/contact">
+                  Contact me
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
