@@ -86,10 +86,11 @@ const testimonials = [
     quote: "Say something nice about me here",
   },
   {
-    name: "Person 2",
-    job: "Software Developer",
+    name: "Amy Mayer",
+    job: "Senior Data Scientist",
     avatar: "",
-    quote: "Say something nice about me here",
+    quote:
+      "Ceri’s technical knowledge is excellent, and he possesses that rare combination of skills where he is also able to communicate complex ideas in a clear and concise manner to non-technical experts. He also generously shares his time and knowledge to do so.",
   },
   {
     name: "Person 3",
@@ -191,6 +192,47 @@ const hobbies = [
 ];
 
 const timeline = [
+  {
+    type: "work",
+    date: {
+      value: "2023-05",
+      display: "May 2023",
+    },
+    description: "Find date - EA demonstrator POC",
+  },
+  {
+    type: "work",
+    date: {
+      value: "2023-05",
+      display: "May 2023",
+    },
+    description: "Find date - COP 26 virtual engage rooms",
+  },
+  {
+    type: "work",
+    date: {
+      value: "2023-05",
+      display: "May 2023",
+    },
+    description: "Find date - ARC community",
+  },
+
+  {
+    type: "work",
+    date: {
+      value: "2023-05",
+      display: "May 2023",
+    },
+    description: "Rollout of new frontend to global audience.",
+  },
+  {
+    type: "work",
+    date: {
+      value: "2022-07",
+      display: "July 2022",
+    },
+    description: "Lead dev Fuse",
+  },
   {
     type: "work",
     date: {
