@@ -174,7 +174,7 @@ const hobbies = [
   {
     name: "Sport",
     description:
-      "Growing up I participated in many different individual and team sports such as karate, golf and football. These days I only really climb and play various racquet sports as a means to keep fit.",
+      "Growing up I participated in many different individual and team sports such as karate, golf and football. These days I climb, practice karate katas and play various racquet sports as a means to keep fit.",
     image: "pages/about/hobbies/sport",
   },
   {
@@ -195,6 +195,15 @@ const timeline = [
   {
     type: "work",
     date: {
+      value: "2022-05",
+      display: "May 2022",
+    },
+    description: "Line management",
+  },
+
+  {
+    type: "work",
+    date: {
       value: "2023-05",
       display: "May 2023",
     },
@@ -207,7 +216,7 @@ const timeline = [
       value: "2022-09",
       display: "September 2022",
     },
-    description: "Find date - EA demonstrator POC",
+    description: "EA demonstrator POC - add more information",
   },
   {
     type: "work",
