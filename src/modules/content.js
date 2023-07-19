@@ -198,32 +198,25 @@ const timeline = [
       value: "2023-05",
       display: "May 2023",
     },
+    description:
+      "Successfully rolled out a major overhaul of the Fuse frontend to a global audience.",
+  },
+  {
+    type: "work",
+    date: {
+      value: "2022-09",
+      display: "September 2022",
+    },
     description: "Find date - EA demonstrator POC",
   },
   {
     type: "work",
     date: {
-      value: "2023-05",
-      display: "May 2023",
+      value: "2022-08",
+      display: "August 2022",
     },
-    description: "Find date - COP 26 virtual engage rooms",
-  },
-  {
-    type: "work",
-    date: {
-      value: "2023-05",
-      display: "May 2023",
-    },
-    description: "Find date - ARC community",
-  },
-
-  {
-    type: "work",
-    date: {
-      value: "2023-05",
-      display: "May 2023",
-    },
-    description: "Rollout of new frontend to global audience.",
+    description:
+      "Started an advisory role on the ARC team - Arup's overarching design system for its suite of products.",
   },
   {
     type: "work",
@@ -231,7 +224,7 @@ const timeline = [
       value: "2022-07",
       display: "July 2022",
     },
-    description: "Lead dev Fuse",
+    description: "Became a lead developer for Arup's Fuse product.",
   },
   {
     type: "work",
@@ -257,6 +250,15 @@ const timeline = [
     },
     description:
       "Used the previously created template to create another digital preliminary environmental information report website for the London Luton Airport expansion.",
+  },
+  {
+    type: "work",
+    date: {
+      value: "2021-11",
+      display: "November 2021",
+    },
+    description:
+      "Helped lead the delivery of a Virtual Engage project for COP26 - showcasing world-leading climate action initiatives from 11 global cities.",
   },
   {
     type: "work",
@@ -318,7 +320,7 @@ const timeline = [
       display: "April 2020",
     },
     description:
-      "Technical lead for Arup's Virtual Engage product. Became an administrator and advocate for Arup's GitHub organisation.",
+      "Started leading the technical development of Arup's Virtual Engage product. Became an administrator and advocate for Arup's GitHub organisation.",
   },
   {
     type: "training",
