@@ -195,15 +195,6 @@ const timeline = [
   {
     type: "work",
     date: {
-      value: "2022-05",
-      display: "May 2022",
-    },
-    description: "Line management",
-  },
-
-  {
-    type: "work",
-    date: {
       value: "2023-05",
       display: "May 2023",
     },
@@ -216,7 +207,8 @@ const timeline = [
       value: "2022-09",
       display: "September 2022",
     },
-    description: "EA demonstrator POC - add more information",
+    description:
+      "Helped build a proof of concept application for a digital twin that predicts river levels at specific locations up to 5 days into the future.",
   },
   {
     type: "work",
@@ -241,7 +233,8 @@ const timeline = [
       value: "2022-04",
       display: "April 2022",
     },
-    description: "Promoted to Senior Software Developer at Arup.",
+    description:
+      "Promoted to Senior Software Developer at Arup with line management resposibilities leading a small team of developers.",
   },
   {
     type: "work",
