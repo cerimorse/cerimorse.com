@@ -14,15 +14,23 @@ export default function Home() {
       <section className="max-w-screen-xl h-[calc(100vh-3.5rem)] min-h-[600px] max-h-[900px] px-4 mx-auto sm:px-8">
         <div className="flex flex-col-reverse gap-8 h-full md:flex-row md:gap-16">
           <div className="flex-1 flex flex-col items-center space-y-8 mb-16 md:items-start md:justify-center md:mb-0">
-            <span className="text-muted-foreground">
+            <span className="text-muted-foreground opacity-0 transition-opacity animate-hero-fade-in motion-reduce:opacity-100 motion-reduce:transition-none motion-reduce:animate-none">
               Design. Develop. Deploy
             </span>
-            <Typography variant="h1">Ceri Morse</Typography>
-            <Typography variant="h4" className="text-center md:text-left">
+            <Typography
+              variant="h1"
+              className="opacity-0 transition animate-hero-fade-in-up motion-reduce:opacity-100 motion-reduce:transition-none motion-reduce:animate-none"
+            >
+              Ceri Morse
+            </Typography>
+            <Typography
+              variant="h4"
+              className="text-center opacity-0 transition animate-hero-fade-in-up delay-150 md:text-left motion-reduce:opacity-100 motion-reduce:transition-none motion-reduce:animate-none"
+            >
               Building immersive digital experiences with cutting-edge web
               technologies, merging creativity and coding.
             </Typography>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 opacity-0 transition animate-hero-fade-in-up delay-300 motion-reduce:opacity-100 motion-reduce:transition-none motion-reduce:animate-none">
               <Button asChild size="lg">
                 <Link variant="unstyled" href="/about">
                   About

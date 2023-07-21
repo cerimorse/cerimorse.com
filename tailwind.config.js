@@ -70,12 +70,20 @@ module.exports = {
           to: { height: 0 },
         },
         "marquee-left": {
-          "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-100%)" },
+          from: { transform: "translateX(0%)" },
+          to: { transform: "translateX(-100%)" },
         },
         "marquee-right": {
-          "0%": { transform: "translateX(100%)" },
-          "100%": { transform: "translateX(0%)" },
+          from: { transform: "translateX(100%)" },
+          to: { transform: "translateX(0%)" },
+        },
+        "hero-fade-in": {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+        "hero-fade-in-up": {
+          from: { opacity: 0, transform: "translateY(1rem)" },
+          to: { opacity: 1, transform: "translateY(0)" },
         },
       },
       animation: {
@@ -83,6 +91,8 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "marquee-left": "marquee-left 25s linear infinite",
         "marquee-right": "marquee-right 25s linear infinite",
+        "hero-fade-in": "hero-fade-in 0.5s ease-in forwards",
+        "hero-fade-in-up": "hero-fade-in-up 0.5s ease-in forwards",
       },
     },
   },
