@@ -17,8 +17,9 @@ export default function AboutPage() {
               src="pages/about/bitesize"
               alt="Alt tag"
               width={633}
-              height={1080}
+              height={900}
               sizes="(min-width: 0px) 100vw, (min-width: 768px) 50vw"
+              priority
               className="h-auto w-full block rounded-lg overflow-hidden"
             />
           </div>

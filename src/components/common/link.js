@@ -7,6 +7,7 @@ const linkVariants = cva("", {
   variants: {
     variant: {
       default: "text-primary underline-offset-4 hover:underline",
+      underline: "text-primary underline-offset-4 underline",
       unstyled: "",
     },
   },

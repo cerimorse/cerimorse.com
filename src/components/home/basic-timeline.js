@@ -49,7 +49,7 @@ export function BasicTimeline() {
           </TimelineItem>
         ))}
       </Timeline>
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background to-98% " />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-muted to-98% pointer-events-none" />
     </div>
   );
 }

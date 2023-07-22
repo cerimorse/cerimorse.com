@@ -5,7 +5,7 @@ import { ThemeToggle } from "@/components/layout/theme-toggle";
 
 export function AppBar() {
   return (
-    <header className="sticky top-0 w-full border-b z-40 supports-backdrop-blur:bg-background/60 bg-background/90 backdrop-blur">
+    <header className="sticky top-0 w-full border-b z-40 bg-background/90 supports-[backdrop-filter]:bg-background/60 supports-[backdrop-filter]:backdrop-blur">
       <div className="px-4 h-14 flex items-center sm:px-8">
         <div className="flex-1 flex">
           <Link
@@ -14,7 +14,9 @@ export function AppBar() {
             className="inline-flex items-center space-x-2"
           >
             <Logo className="h-6 w-6" />
-            <span className="hidden font-bold sm:inline-block">Ceri Morse</span>
+            <span className="sr-only font-bold sm:not-sr-only sm:inline-block">
+              Ceri Morse
+            </span>
           </Link>
         </div>
         <div className="flex-1 flex justify-center">
