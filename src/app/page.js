@@ -93,6 +93,7 @@ export default function Home() {
               <Typography variant="h3">
                 {"I lead the development of the award winning "}
                 <Link
+                  variant="underline"
                   href="https://www.arup.com/services/tools/virtual-engage"
                   target="_blank"
                   rel="noopener"
@@ -101,6 +102,7 @@ export default function Home() {
                 </Link>
                 {" product and Arup's unified project data platform, "}
                 <Link
+                  variant="underline"
                   href="https://www.arup.com/services/tools/fuse"
                   target="_blank"
                   rel="noopener"
