@@ -81,6 +81,9 @@
 }
 
 @layer utilities {
+  .overflow-x-unset {
+    overflow-x: unset;
+  }
   .animation-state-pause {
     animation-play-state: paused;
   }

@@ -17,6 +17,11 @@ import {
   Typescript as TypescriptIcon,
   Vercel as VercelIcon,
 } from "@/components/common/icons";
+import {
+  ScrollArea,
+  ScrollAreaViewport,
+  ScrollAreaScrollbar,
+} from "@/components/common/scroll-area";
 
 const icons = {
   JavaScript: <JavascriptIcon className="h-12 w-12" />,
@@ -39,24 +44,33 @@ const icons = {
 
 export function SkillsMarquee() {
   return (
-    <div className="relative w-full flex overflow-x-hidden [&>*]:hover:animation-state-pause">
-      <div className="flex space-x-8 pl-8 animate-marquee-left">
-        {skills.map((skill) => (
-          <div key={skill} className="flex flex-col items-center space-y-2">
-            {icons[skill]}
-            <span>{skill}</span>
-          </div>
-        ))}
-      </div>
-      <div className="absolute top-0 flex space-x-8 pl-8 animate-marquee-right">
-        {skills.map((skill) => (
-          <div key={skill} className="flex flex-col items-center space-y-2">
-            {icons[skill]}
-            <span>{skill}</span>
-          </div>
-        ))}
-      </div>
-      <div className="absolute inset-0 bg-gradient-to-r from-background from-2% via-transparent to-background to-98% pointer-events-none" />
-    </div>
+    <ScrollArea className="relative w-full">
+      <ScrollAreaViewport className="[&>div>*]:hover:animation-state-pause !overflow-x-hidden motion-reduce:!overflow-x-unset">
+        <div className="flex space-x-8 pl-8 animate-marquee-left motion-reduce:pr-8 motion-reduce:animate-none">
+          {skills.map((skill) => (
+            <div key={skill} className="flex flex-col items-center space-y-2">
+              {icons[skill]}
+              <span>{skill}</span>
+            </div>
+          ))}
+        </div>
+        <div
+          aria-hidden="true"
+          className="absolute top-0 flex space-x-8 pl-8 animate-marquee-right motion-reduce:hidden motion-reduce:animate-none"
+        >
+          {skills.map((skill) => (
+            <div key={skill} className="flex flex-col items-center space-y-2">
+              {icons[skill]}
+              <span>{skill}</span>
+            </div>
+          ))}
+        </div>
+      </ScrollAreaViewport>
+      <ScrollAreaScrollbar
+        orientation="horizontal"
+        className="hidden motion-reduce:flex"
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-background from-2% via-transparent to-background to-98% pointer-events-none motion-reduce:hidden" />
+    </ScrollArea>
   );
 }
