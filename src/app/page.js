@@ -25,12 +25,12 @@ export default function Home() {
             </Typography>
             <Typography
               variant="h4"
-              className="text-center opacity-0 transition animate-hero-fade-in-up delay-150 md:text-left motion-reduce:opacity-100 motion-reduce:transition-none motion-reduce:animate-none"
+              className="text-center opacity-0 transition animate-hero-fade-in-up animation-delay-150 md:text-left motion-reduce:opacity-100 motion-reduce:transition-none motion-reduce:animate-none"
             >
               Building immersive digital experiences with cutting-edge web
               technologies, merging creativity and coding.
             </Typography>
-            <div className="flex space-x-4 opacity-0 transition animate-hero-fade-in-up delay-300 motion-reduce:opacity-100 motion-reduce:transition-none motion-reduce:animate-none">
+            <div className="flex space-x-4 opacity-0 transition animate-hero-fade-in-up animation-delay-300 motion-reduce:opacity-100 motion-reduce:transition-none motion-reduce:animate-none">
               <Button asChild size="lg">
                 <Link variant="unstyled" href="/about">
                   About
