@@ -14,7 +14,9 @@ export function AppBar() {
             className="inline-flex items-center space-x-2"
           >
             <Logo className="h-6 w-6" />
-            <span className="hidden font-bold sm:inline-block">Ceri Morse</span>
+            <span className="sr-only font-bold sm:not-sr-only sm:inline-block">
+              Ceri Morse
+            </span>
           </Link>
         </div>
         <div className="flex-1 flex justify-center">
