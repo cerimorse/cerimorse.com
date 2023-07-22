@@ -50,7 +50,9 @@ export function Testimonials() {
         </div>
         <div className="space-x-2 mr-3">
           {testimonials.map((_, index) => (
-            <CarouselTrigger key={index} index={index} />
+            <CarouselTrigger key={index} index={index}>
+              <span className="sr-only">{`Testimonial ${index + 1}`}</span>
+            </CarouselTrigger>
           ))}
         </div>
       </CarouselControls>
