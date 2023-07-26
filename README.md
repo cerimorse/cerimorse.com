@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/arup-group/arup-fuse-frontend-react/issues">Submit an Issue</a>
+  <a href="https://github.com/cerimorse/cerimorse.com/issues">Submit an Issue</a>
   <br/>
   <br/>
 </p>
