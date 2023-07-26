@@ -14,23 +14,21 @@ export default function Home() {
       <section className="max-w-screen-xl h-[calc(100vh-3.5rem)] min-h-[600px] max-h-[900px] px-4 mx-auto sm:px-8">
         <div className="flex flex-col-reverse gap-8 h-full md:flex-row md:gap-16">
           <div className="flex-1 flex flex-col items-center space-y-8 mb-16 md:items-start md:justify-center md:mb-0">
-            <span className="text-muted-foreground opacity-0 transition-opacity animate-hero-fade-in motion-reduce:opacity-100 motion-reduce:transition-none motion-reduce:animate-none">
+            <span className="text-muted-foreground">
               Design. Develop. Deploy
             </span>
-            <Typography
-              variant="h1"
-              className="opacity-0 transition animate-hero-fade-in-up motion-reduce:opacity-100 motion-reduce:transition-none motion-reduce:animate-none"
-            >
-              Ceri Morse
-            </Typography>
+            <Typography variant="h1">Ceri Morse</Typography>
             <Typography
               variant="h4"
-              className="text-center opacity-0 transition animate-hero-fade-in-up animation-delay-150 md:text-left motion-reduce:opacity-100 motion-reduce:transition-none motion-reduce:animate-none"
+              asChild
+              className="text-center md:text-left"
             >
-              Building immersive digital experiences with cutting-edge web
-              technologies, merging creativity and coding.
+              <div>
+                Building immersive digital experiences with cutting-edge web
+                technologies, merging creativity and coding.
+              </div>
             </Typography>
-            <div className="flex space-x-4 opacity-0 transition animate-hero-fade-in-up animation-delay-300 motion-reduce:opacity-100 motion-reduce:transition-none motion-reduce:animate-none">
+            <div className="flex space-x-4">
               <Button asChild size="lg">
                 <Link variant="unstyled" href="/about">
                   About
@@ -95,7 +93,6 @@ export default function Home() {
               <Typography variant="h3">
                 {"I lead the development of the award winning "}
                 <Link
-                  variant="underline"
                   href="https://www.arup.com/services/tools/virtual-engage"
                   target="_blank"
                   rel="noopener"
@@ -104,7 +101,6 @@ export default function Home() {
                 </Link>
                 {" product and Arup's unified project data platform, "}
                 <Link
-                  variant="underline"
                   href="https://www.arup.com/services/tools/fuse"
                   target="_blank"
                   rel="noopener"
