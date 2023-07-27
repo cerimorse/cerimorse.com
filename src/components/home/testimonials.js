@@ -17,7 +17,7 @@ export function Testimonials() {
     <Carousel className="max-w-xl space-y-4 py-4">
       <CarouselViewport>
         {testimonials.map(({ name, job, avatar, quote }) => (
-          <CarouselItem key={name}>
+          <CarouselItem key={name} className="h-fit">
             <CarouselContent>
               <Typography
                 variant="body"
@@ -25,7 +25,7 @@ export function Testimonials() {
               >{`"${quote}"`}</Typography>
               <div className="inline-flex items-center space-x-6">
                 <Avatar>
-                  <AvatarImage src={avatar} />
+                  <AvatarImage src={avatar} alt={name} />
                 </Avatar>
                 <div>
                   <Typography varaint="body" className="text-muted-foreground">
