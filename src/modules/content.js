@@ -80,23 +80,28 @@ const career = [
 
 const testimonials = [
   {
-    name: "Person 1",
-    job: "Software Developer",
-    avatar: "",
-    quote: "Say something nice about me here",
+    name: "Jacques Coetzee",
+    job: "Full Stack Developer",
+    avatar:
+      "https://res.cloudinary.com/cerimorse-com/image/upload/f_auto,c_limit,w_128,q_auto/pages/home/testimonials/jacques",
+    quote:
+      "I have really enjoyed working with Ceri, collaboration is definitely one of his strong points. His oversight and management of Virtual Engage is impressive and his trust and confidence in me has really accelerated my own confidence and progression.",
   },
   {
     name: "Amy Mayer",
     job: "Senior Data Scientist",
-    avatar: "",
+    avatar:
+      "https://res.cloudinary.com/cerimorse-com/image/upload/f_auto,c_limit,w_128,q_auto/pages/home/testimonials/amy",
     quote:
       "Ceri’s technical knowledge is excellent, and he possesses that rare combination of skills where he is also able to communicate complex ideas in a clear and concise manner to non-technical experts. He also generously shares his time and knowledge to do so.",
   },
   {
-    name: "Person 3",
-    job: "Software Developer",
-    avatar: "",
-    quote: "Say something nice about me here",
+    name: "Christina Meggs",
+    job: "Software Engineer",
+    avatar:
+      "https://res.cloudinary.com/cerimorse-com/image/upload/f_auto,c_limit,w_128,q_auto/pages/home/testimonials/christina",
+    quote:
+      "Ceri was great at leading the development and managing the team's timelines. He set up regular check-in calls to go over progress and what was next to do. I've always found Ceri easy to talk to and get along with. He's always been willing to help me and answer my questions.",
   },
 ];
 
