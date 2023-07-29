@@ -33,7 +33,7 @@ export default function Home() {
                 technologies, merging creativity and coding.
               </div>
             </Typography>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 opacity-0 transition animate-hero-fade-in-up animation-delay-300 motion-reduce:opacity-100 motion-reduce:transition-none motion-reduce:animate-none">
               <Button asChild size="lg">
                 <Link variant="unstyled" href="/about">
                   About
