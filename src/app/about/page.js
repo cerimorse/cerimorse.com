@@ -87,14 +87,14 @@ export default function AboutPage() {
         />
       </section>
       <section className="max-w-screen-lg px-4 py-16 mx-auto sm:px-8">
-        <Typography variant="h4" className="mb-8">
+        <Typography variant="h3" className="mb-8">
           {`I've used a lot of different technologies during my time as a
           developer. Here's what I enjoy the most and use on a day-to-day basis.`}
         </Typography>
         <Technology />
       </section>
       <section className="max-w-screen-lg px-4 py-16 mx-auto sm:px-8">
-        <Typography variant="h4" className="mb-8">
+        <Typography variant="h3" className="mb-8">
           {`Life isn’t all about work. Here are some things I like to do in my
           downtime to have fun and relax.`}
         </Typography>

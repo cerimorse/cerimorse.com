@@ -33,7 +33,9 @@ export function Footer() {
       <Separator />
       <div className="max-w-screen-xl px-4 mx-auto mt-4 mb-2 grid gap-4 grid-cols-12 sm:px-8 sm:mt-8 sm:mb-4 md:gap-8">
         <div className="col-span-12 md:col-span-6">
-          <Typography variant="h5">Ceri Morse</Typography>
+          <Typography variant="h5" asChild>
+            <div>Ceri Morse</div>
+          </Typography>
           <Typography variant="body" className="mt-2">
             Designing and developing full stack software solutions that are
             responsive and accessible.
@@ -84,7 +86,9 @@ export function Footer() {
         </div>
         <div className="col-span-12 md:col-span-4">
           <div className="hidden md:block">
-            <Typography variant="h5">Sitemap</Typography>
+            <Typography variant="h5" asChild>
+              <div>Sitemap</div>
+            </Typography>
             <div className="mt-2 grid grid-cols-10">
               <div className="col-span-5 flex flex-col leading-7">
                 {pages.info.map(({ path, label }) => (
@@ -125,7 +129,9 @@ export function Footer() {
           </Accordion>
         </div>
         <div className="col-span-12 flex flex-col md:col-span-2">
-          <Typography variant="h5">Artwork</Typography>
+          <Typography variant="h5" asChild>
+            <div>Artwork</div>
+          </Typography>
           <div className="mt-4 inline-flex h-24 md:h-auto md:flex-1 ">
             <FlickrRandom />
           </div>
