@@ -80,22 +80,28 @@ const career = [
 
 const testimonials = [
   {
-    name: "Person 1",
-    job: "Software Developer",
-    avatar: "",
-    quote: "Say something nice about me here",
+    name: "Jacques Coetzee",
+    job: "Full Stack Developer",
+    avatar:
+      "https://res.cloudinary.com/cerimorse-com/image/upload/f_auto,c_limit,w_128,q_auto/pages/home/testimonials/jacques",
+    quote:
+      "I have really enjoyed working with Ceri, collaboration is definitely one of his strong points. His oversight and management of Virtual Engage is impressive and his trust and confidence in me has really accelerated my own confidence and progression.",
   },
   {
-    name: "Person 2",
-    job: "Software Developer",
-    avatar: "",
-    quote: "Say something nice about me here",
+    name: "Amy Mayer",
+    job: "Senior Data Scientist",
+    avatar:
+      "https://res.cloudinary.com/cerimorse-com/image/upload/f_auto,c_limit,w_128,q_auto/pages/home/testimonials/amy",
+    quote:
+      "Ceri’s technical knowledge is excellent, and he possesses that rare combination of skills where he is also able to communicate complex ideas in a clear and concise manner to non-technical experts. He also generously shares his time and knowledge to do so.",
   },
   {
-    name: "Person 3",
-    job: "Software Developer",
-    avatar: "",
-    quote: "Say something nice about me here",
+    name: "Christina Meggs",
+    job: "Software Engineer",
+    avatar:
+      "https://res.cloudinary.com/cerimorse-com/image/upload/f_auto,c_limit,w_128,q_auto/pages/home/testimonials/christina",
+    quote:
+      "Ceri was great at leading the development and managing the team's timelines. He set up regular check-in calls to go over progress and what was next to do. I've always found Ceri easy to talk to and get along with. He's always been willing to help me and answer my questions.",
   },
 ];
 
@@ -173,7 +179,7 @@ const hobbies = [
   {
     name: "Sport",
     description:
-      "Growing up I participated in many different individual and team sports such as karate, golf and football. These days I only really climb and play various racquet sports as a means to keep fit.",
+      "Growing up I participated in many different individual and team sports such as karate, golf and football. These days I climb, practice karate katas and play various racquet sports as a means to keep fit.",
     image: "pages/about/hobbies/sport",
   },
   {
@@ -194,10 +200,46 @@ const timeline = [
   {
     type: "work",
     date: {
+      value: "2023-05",
+      display: "May 2023",
+    },
+    description:
+      "Successfully rolled out a major overhaul of the Fuse frontend to a global audience.",
+  },
+  {
+    type: "work",
+    date: {
+      value: "2022-09",
+      display: "September 2022",
+    },
+    description:
+      "Helped build a proof of concept application for a digital twin that predicts river levels at specific locations up to 5 days into the future.",
+  },
+  {
+    type: "work",
+    date: {
+      value: "2022-08",
+      display: "August 2022",
+    },
+    description:
+      "Started an advisory role on the ARC team - Arup's overarching design system for its suite of products.",
+  },
+  {
+    type: "work",
+    date: {
+      value: "2022-07",
+      display: "July 2022",
+    },
+    description: "Became a lead developer for Arup's Fuse product.",
+  },
+  {
+    type: "work",
+    date: {
       value: "2022-04",
       display: "April 2022",
     },
-    description: "Promoted to Senior Software Developer at Arup.",
+    description:
+      "Promoted to Senior Software Developer at Arup with line management resposibilities leading a small team of developers.",
   },
   {
     type: "work",
@@ -215,6 +257,15 @@ const timeline = [
     },
     description:
       "Used the previously created template to create another digital preliminary environmental information report website for the London Luton Airport expansion.",
+  },
+  {
+    type: "work",
+    date: {
+      value: "2021-11",
+      display: "November 2021",
+    },
+    description:
+      "Helped lead the delivery of a Virtual Engage project for COP26 - showcasing world-leading climate action initiatives from 11 global cities.",
   },
   {
     type: "work",
@@ -276,7 +327,7 @@ const timeline = [
       display: "April 2020",
     },
     description:
-      "Technical lead for Arup's Virtual Engage product. Became an administrator and advocate for Arup's GitHub organisation.",
+      "Started leading the technical development of Arup's Virtual Engage product. Became an administrator and advocate for Arup's GitHub organisation.",
   },
   {
     type: "training",
