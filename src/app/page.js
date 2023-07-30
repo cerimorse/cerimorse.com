@@ -76,7 +76,7 @@ export default function Home() {
       <section className="max-w-screen-xl px-4 py-16 mx-auto sm:px-8">
         <div className="flex flex-col items-center space-y-12">
           <Typography variant="h3" className="text-center">
-            {"Here's some of the technologies I enjoy working with."}
+            Here are some of the technologies I enjoy working with.
           </Typography>
           <SkillsMarquee />
           <Button asChild size="lg">
