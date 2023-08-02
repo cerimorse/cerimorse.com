@@ -28,7 +28,7 @@ export function Testimonials() {
                   <AvatarImage src={avatar} alt={name} />
                 </Avatar>
                 <div>
-                  <Typography varaint="body">{name}</Typography>
+                  <Typography variant="body">{name}</Typography>
                   <Typography
                     variant="body"
                     className="text-sm text-muted-foreground"
