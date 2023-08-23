@@ -9,6 +9,7 @@ import { AppBar } from "@/components/layout/app-bar";
 import { Footer } from "@/components/layout/footer";
 
 export const metadata = {
+  metadataBase: new URL("https://cerimorse.com"),
   title: {
     template: "%s | Ceri Morse",
     default: "Ceri Morse",
@@ -19,11 +20,14 @@ export const metadata = {
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Ceri Morse",
     description:
       "Building immersive digital experiences with cutting-edge web technologies, merging creativity and coding.",
-    url: "https://cerimorse.com",
+    url: "/",
     siteName: "Ceri Morse",
     locale: "en_GB",
     type: "website",
