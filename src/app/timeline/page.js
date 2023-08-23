@@ -2,6 +2,9 @@ import { TimelineMoments } from "@/components/timeline/timeline-moments";
 
 export const metadata = {
   title: "Timeline",
+  alternates: {
+    canonical: "/timeline",
+  },
 };
 
 export default function TimelinePage() {
