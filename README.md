@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://cerimorse.com"><strong>cerimorse.com</strong></a>
+  <a href="https://www.cerimorse.com"><strong>cerimorse.com</strong></a>
   <br/>
 </p>
 
@@ -42,11 +42,11 @@
 
 ### Features
 
-- ⚡ [Next.js](https://nextjs.org) for Static Site Generation, Server-side Rendering and API Routes
-- 💎 Integrate with [Tailwind](https://arc.arup.com), [Radix UI](https://www.radix-ui.com/) and [shadcn/ui](https://ui.shadcn.com/)
+- ⚡ [Next.js](https://nextjs.org/) for Static Site Generation, Server-side Rendering and API Routes
+- 💎 Integrate with [Tailwind](https://tailwindcss.com/), [Radix UI](https://www.radix-ui.com/) and [shadcn/ui](https://ui.shadcn.com/)
 - ✉️ E-mail templates with [React Email](https://react.email/)
-- 📏 Linter with [ESLint](https://eslint.org) (default Next.js and Next.js Core Web Vitals)
-- 💖 Code Formatter with [Prettier](https://prettier.io)
+- 📏 Linter with [ESLint](https://eslint.org/) (default Next.js and Next.js Core Web Vitals)
+- 💖 Code Formatter with [Prettier](https://prettier.io/)
 - 🦊 Husky for Git Hooks
 - 🚫 Lint-staged for running linters on Git staged files
 - 🚓 Lint git commit with Commitlint
