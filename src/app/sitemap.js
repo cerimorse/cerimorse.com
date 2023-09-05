@@ -1,19 +1,19 @@
 export default function sitemap() {
   return [
     {
-      url: "https://cerimorse.com",
+      url: "https://www.cerimorse.com",
       lastModified: new Date(),
     },
     {
-      url: "https://cerimorse.com/about",
+      url: "https://www.cerimorse.com/about",
       lastModified: new Date(),
     },
     {
-      url: "https://cerimorse.com/timeline",
+      url: "https://www.cerimorse.com/timeline",
       lastModified: new Date(),
     },
     {
-      url: "https://cerimorse.com/contact",
+      url: "https://www.cerimorse.com/contact",
       lastModified: new Date(),
     },
   ];

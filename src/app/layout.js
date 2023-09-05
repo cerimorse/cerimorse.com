@@ -9,7 +9,7 @@ import { AppBar } from "@/components/layout/app-bar";
 import { Footer } from "@/components/layout/footer";
 
 export const metadata = {
-  metadataBase: new URL("https://cerimorse.com"),
+  metadataBase: new URL("https://www.cerimorse.com"),
   title: {
     template: "%s | Ceri Morse",
     default: "Ceri Morse",

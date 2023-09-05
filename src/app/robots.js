@@ -3,7 +3,7 @@ export default function robots() {
     rules: {
       userAgent: "*",
     },
-    sitemap: "https://cerimorse.com/sitemap.xml",
-    host: "https://cerimorse.com",
+    sitemap: "https://www.cerimorse.com/sitemap.xml",
+    host: "https://www.cerimorse.com",
   };
 }

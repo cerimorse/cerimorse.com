@@ -37,7 +37,7 @@ const ContactEmail = ({ name, email, message }) => {
             <Section className="mt-8">
               <Hr />
               <Link
-                href="https://cerimorse.com"
+                href="https://www.cerimorse.com"
                 className="text-slate-400 text-sm no-underline"
               >
                 cerimorse.com
