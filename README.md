@@ -57,8 +57,8 @@
 
 ### Requirements
 
-- Node.js 16+
-- npm 
+- Node.js 20+
+- pnpm 
 
 
 ### Getting started
@@ -78,7 +78,7 @@ cd cerimorse.com
 Install the project dependencies:
 
 ```shell
-npm install
+pnpm install
 ```
 
 
@@ -100,7 +100,7 @@ All environment variables should be stored in a `.env.local` file in the project
 You can now run the site locally in development mode:
 
 ```shell
-npm run dev
+pnpm run dev
 ```
 
 
@@ -119,11 +119,9 @@ My personal website uses a fairly common folder structure for Next.js app router
 │   ├── components                  # Common and page specific components
 │   ├── emails                      # Email templates
 │   ├── hooks                       # Custom hooks
-│   ├── lib                         # External library configurations, setup and wrapper functions
-│   ├── modules                     # Page content, fonts and utility functions
+│   ├── lib                         # External library configurations, setup and utility functions
 │   ├── providers                   # Custom providers
 │   └── styles                      # Global styles for use with Tailwind CSS
-├── jsconfig.json                   # JavaScript configuration
-├── next.config.js                  # Next.js configuration
-└── tailwind.config.js              # Tailwind CSS configuration
+├── tsconfig.json                   # TypeScript configuration
+├── next.config.ts                  # Next.js configuration
 ```
