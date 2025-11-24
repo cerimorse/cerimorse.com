@@ -1,5 +1,6 @@
 import { fontSans } from "@/lib/fonts";
 import { ThemeProvider } from "@/providers/theme-provider";
+import { Footer } from "@/components/layout/footer";
 
 import type { Metadata, Viewport } from "next";
 
@@ -70,6 +71,7 @@ export default function RootLayout({
           <main className="bg-background min-h-screen mx-auto px-8 max-w-3xl">
             {children}
           </main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
