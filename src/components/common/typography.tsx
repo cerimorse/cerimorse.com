@@ -41,13 +41,13 @@ const typographyElements: Record<
 };
 
 function Typography<V extends keyof typeof typographyElements>({
-  variant = "body" as V,
   asChild = false,
+  variant = "body" as V,
   className,
   ...props
 }: React.ComponentProps<(typeof typographyElements)[V]> & {
-  variant?: V;
   asChild?: boolean;
+  variant?: V;
 }) {
   const Comp = (
     asChild ? Slot : typographyElements[variant]

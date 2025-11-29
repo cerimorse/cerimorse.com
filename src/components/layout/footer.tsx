@@ -3,7 +3,7 @@ import { Typography } from "@/components/common/typography";
 
 export function Footer() {
   return (
-    <footer className="mt-14">
+    <footer className="mt-14 w-full bg-background">
       <div className="max-w-3xl mx-auto px-8">
         <Separator />
         <Typography
