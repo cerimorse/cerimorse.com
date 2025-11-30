@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/cerimorse/cerimorse.com/issues">Submit an Issue</a>
+  <a href="https://github.com/cerimorse/cerimorse.com/issues">Submit an Issue </a>
   <br/>
   <br/>
 </p>
@@ -39,7 +39,6 @@
 
 <hr/>
 
-
 ### Features
 
 - ⚡ [Next.js](https://nextjs.org/) for Static Site Generation, Server-side Rendering and API Routes
@@ -54,12 +53,10 @@
 - 💡 Absolute Imports using `@/` prefix
 - 👷 Vercel - Automated deployments and preview deployments on pull request
 
-
 ### Requirements
 
 - Node.js 20+
-- pnpm 
-
+- pnpm
 
 ### Getting started
 
@@ -81,7 +78,6 @@ Install the project dependencies:
 pnpm install
 ```
 
-
 ### Environment variables
 
 My personal website requires a number of environment variables in order to run correctly:
@@ -92,8 +88,7 @@ My personal website requires a number of environment variables in order to run c
 - **SPOTIFY_CLIENT_SECRET**: Application key used to authorise calls to the web API
 - **SPOTIFY_REFRESH_TOKEN**: Request a new access token
 
-All environment variables should be stored in a `.env.local` file in the project's root directory. 
-
+All environment variables should be stored in a `.env.local` file in the project's root directory.
 
 ### Running
 
@@ -102,7 +97,6 @@ You can now run the site locally in development mode:
 ```shell
 pnpm run dev
 ```
-
 
 ### Project structure
 
