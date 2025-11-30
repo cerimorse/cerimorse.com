@@ -40,14 +40,14 @@ export default function CodingPage() {
       <Typography variant="h1" className="mb-14">
         Coding
       </Typography>
-      <Typography variant="body" className="mb-14">
+      <Typography className="mb-14">
         I build software that works well, is maintainable, and lets me move
         quickly without sacrificing quality. The tools, patterns, and principles
         I rely on keep my work clear, reliable, and focused on outcomes.
       </Typography>
       <section className="flex flex-col gap-8 mb-12">
         <Typography variant="h2">Philosophy</Typography>
-        <Typography variant="body">
+        <Typography>
           These principles guide how I approach building software. They help me
           maintain clarity, momentum, and usability, keeping projects manageable
           without adding friction.
@@ -62,7 +62,7 @@ export default function CodingPage() {
       </section>
       <section className="flex flex-col gap-8 mb-12">
         <Typography variant="h2">Core Technologies</Typography>
-        <Typography variant="body">
+        <Typography>
           Here&apos;s what I use to build web applications every day:
         </Typography>
         <ul className="flex flex-col gap-8">
@@ -70,9 +70,7 @@ export default function CodingPage() {
             <li key={category} className="flex flex-col gap-4">
               <Typography variant="h3">{category}</Typography>
               {description.map((item) => (
-                <Typography key={item} variant="body">
-                  {item}
-                </Typography>
+                <Typography key={item}>{item}</Typography>
               ))}
             </li>
           ))}
@@ -82,7 +80,7 @@ export default function CodingPage() {
         <Typography variant="h2">
           Other Technologies I&apos;ve Worked With
         </Typography>
-        <Typography variant="body">
+        <Typography>
           I&apos;m comfortable using these tools when the project calls for
           them:
         </Typography>

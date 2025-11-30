@@ -19,7 +19,7 @@ export function AppBar() {
             </span>
           </Link>
         </div>
-        <div className="flex flex-1 justify-end">
+        <div className="flex flex-1 gap-1 justify-end">
           <Navigation />
           <ThemeToggle />
         </div>

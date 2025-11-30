@@ -55,9 +55,7 @@ export function TimelineMoments() {
         <Typography variant="h2">
           Here are some significant moments from my professional career.
         </Typography>
-        <Typography variant="body" className="mt-8">
-          Filter by type:
-        </Typography>
+        <Typography className="mt-8">Filter by type:</Typography>
         <ToggleGroup
           type="multiple"
           variant="outline"
