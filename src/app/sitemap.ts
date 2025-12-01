@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: "https://www.cerimorse.com/tech-stack",
+      url: "https://www.cerimorse.com/coding",
       lastModified: new Date(),
     },
     {

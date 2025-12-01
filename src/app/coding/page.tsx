@@ -16,7 +16,15 @@ import {
 } from "@/components/common/icons";
 import { Typography } from "@/components/common/typography";
 
+import type { Metadata } from "next";
 import type { Technology } from "@/content/coding";
+
+export const metadata: Metadata = {
+  title: "Coding",
+  alternates: {
+    canonical: "/coding",
+  },
+};
 
 const icons: Record<Technology, React.JSX.Element> = {
   HTML: <HtmlIcon />,
