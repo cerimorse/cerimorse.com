@@ -18,6 +18,33 @@ export const moments: {
   {
     type: "work",
     date: {
+      value: "2025-10",
+      display: "October 2025",
+    },
+    description:
+      "Started a new role at Hargreaves Lansdown as a Senior Software Engineer.",
+  },
+  {
+    type: "award",
+    date: {
+      value: "2025-06",
+      display: "June 2025",
+    },
+    description:
+      "Won the Award for Digital Innovation at the Ground Engineering Awards for Arup Fuse & ProjectGPT.",
+  },
+  {
+    type: "award",
+    date: {
+      value: "2024-10",
+      display: "October 2024",
+    },
+    description:
+      "Awarded Geospatial Innovation of the Year Award by Digital Leaders 100 for Arup Fuse.",
+  },
+  {
+    type: "work",
+    date: {
       value: "2023-05",
       display: "May 2023",
     },
