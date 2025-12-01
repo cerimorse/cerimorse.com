@@ -48,12 +48,13 @@ export default function Home() {
           >
             Arup
           </Link>
-          , leading development of high-impact internal and public-facing
+          , leading development of widely-used internal and public-facing
           platforms, shaping design systems, and mentoring development teams.
         </Typography>
         <div className="flex flex-col gap-3">
           <Typography>
-            I enjoy sharing how I work and the journey that’s brought me here:
+            I enjoy sharing how I work and the journey that&apos;s brought me
+            here:
           </Typography>
           <ul className="flex flex-col list-disc ml-8">
             <li>
