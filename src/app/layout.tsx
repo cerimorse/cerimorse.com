@@ -14,14 +14,14 @@ export const metadata: Metadata = {
     default: "Ceri Morse",
   },
   description:
-    "Building immersive digital experiences with cutting-edge web technologies, merging creativity and coding.",
+    "Full-stack tech lead building scalable, reliable web platforms. I turn ideas into real products, lead teams, and create software that delivers genuine value.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Ceri Morse",
     description:
-      "Building immersive digital experiences with cutting-edge web technologies, merging creativity and coding.",
+      "Full-stack tech lead building scalable, reliable web platforms. I turn ideas into real products, lead teams, and create software that delivers genuine value.",
     url: "/",
     siteName: "Ceri Morse",
     locale: "en_GB",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ceri Morse",
     description:
-      "Building immersive digital experiences with cutting-edge web technologies, merging creativity and coding.",
+      "Full-stack tech lead building scalable, reliable web platforms. I turn ideas into real products, lead teams, and create software that delivers genuine value.",
     site: "@kezmorz",
     creator: "@kezmorz",
   },

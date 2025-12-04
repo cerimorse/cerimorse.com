@@ -14,9 +14,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://www.cerimorse.com/timeline",
       lastModified: new Date(),
     },
-    {
-      url: "https://www.cerimorse.com/contact",
-      lastModified: new Date(),
-    },
   ];
 }
