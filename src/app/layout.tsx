@@ -32,8 +32,6 @@ export const metadata: Metadata = {
     title: "Ceri Morse",
     description:
       "Full-stack tech lead building scalable, reliable web platforms. I turn ideas into real products, lead teams, and create software that delivers genuine value.",
-    site: "@kezmorz",
-    creator: "@kezmorz",
   },
   robots: {
     index: true,
