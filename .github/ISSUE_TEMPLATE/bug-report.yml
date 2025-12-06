@@ -1,0 +1,48 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug"]
+assignees:
+  - cerimorse
+body:
+  - type: markdown
+    attributes: 
+      value: |
+        Please search to see if an issue already exists before opening a bug report.
+
+        ---
+
+        Thank you for taking the time to file a bug report. To address this as quickly as possible, I need as much of the information below as possible:
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug description
+      description: A clear and concise description of what happened.
+    validations:
+      required: true
+  - type: input
+    id: operating-system
+    attributes:
+      label: Operating system
+      description: What operating system did you see this problem on? Please provide the version as well.
+      placeholder: macOS Catalina 10.15.7
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      description: What browser did you see this problem on? Please provide the version as well.
+      placeholder: Google Chrome 96.0.4664.110
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: The steps required to reproduce the bug.
+  - type: textarea
+    id: expected-behaviour
+    attributes:
+      label: Expected behaviour
+      description: A clear and concise description of what you expected to happen.
