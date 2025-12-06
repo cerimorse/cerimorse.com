@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { fontSans } from "@/lib/fonts";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { AppBar } from "@/components/layout/app-bar";
@@ -73,6 +74,7 @@ export default function RootLayout({
           </main>
           <Footer />
         </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
