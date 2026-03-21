@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { fontSans } from "@/lib/fonts";
 import { ThemeProvider } from "@/providers/theme-provider";
@@ -74,6 +75,7 @@ export default function RootLayout({
           </main>
           <Footer />
         </ThemeProvider>
+        <Analytics />
         <SpeedInsights />
       </body>
     </html>
